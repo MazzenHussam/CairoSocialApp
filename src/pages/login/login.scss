@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.login{
+    height: 100vh;
+    background-color: rgb(193, 190, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card{
+        width: 50%;
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        height: 600px;
+        overflow: hidden;
+
+        .left, .right {
+    flex: 1;
+    min-width: 0;
+     height: 100%; // ensure both fill parent
+        box-sizing: border-box;
+}
+        .left{
+            
+            background: url("../../assets/1.jpg")  center;
+            
+            background-size: cover;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: white;
+            
+        
+
+            h1{
+                font-size: 60px;
+                line-height: 70px;
+            }
+            p{}
+            span{
+                font-size: 14px;
+            }
+            button{
+                width: 50%;
+                padding: 10px ;
+                background-color: rebeccapurple ;
+                border: none;
+                border-radius: 10px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+
+
+
+        .right{
+            
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+           
+            h1{
+            color: #555;
+            }
+            p{}
+            form{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            input{
+                border: none;
+                border-bottom: 1px solid #ccc;
+                padding:  20px 10px;
+            }
+            
+            button{
+                width: 50%;
+                padding: 10px ;
+                background-color: #938eef ;
+                border: none;
+                border-radius: 10px;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            }
+        }
+    }
+}
